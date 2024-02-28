@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?selection?query=playfair+Display+ital,wght@0,500;0,600;0,700;1,400&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+     font-family:'Playfair Display', serif; 
+    box-sizing: border-box;
+    
+}
+
+
+body {
+    background: #bbc6fa;
+}
+
+.quotebox {
+    background: #fff;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.15);
+
+}
+.quotebox h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.quotebox h2::after {
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgba(23, 224, 229);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.quotebox blockquote{
+    font-size: 26px;
+    min-height: 110px;
+}
+
+.quotebox blockquote::after,.quotebox blockquote::before{
+    content: '"'
+}
+
+.quotebox span{
+    display:block;
+    margin-top: 10px;
+    float:right;
+    position: relative;
+}
+
+
+.quotebox span::after{
+    height:2px;
+    width:20px;
+    content: '';
+    background: rgb(23,124,229);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.quotebox  div{
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.quotebox  button{
+    display: flex;
+    background: rgb(23,124,229);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgb(23,124,229);
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.quotebox button img{
+    width: 60px;
+    margin-right: 10px ;
+}
+
+
+.quotebox button:nth-child(2){
+    background: transparent;
+    color: #333; 
+}
